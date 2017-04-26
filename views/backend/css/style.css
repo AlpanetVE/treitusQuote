@@ -1,0 +1,16 @@
+/**
+ * CSS code for all treitusQuote admin screens
+ *
+ * @package Treitus Quote
+ * @subpackage Views CSS
+ * @author Alpanet
+ * @since 1.0.0
+ */
+.div-cost label.control-label {
+    font-weight: bold;
+}
+
+.input-group input, .input-group span {
+    height: 30px;
+    line-height: 1;
+}

@@ -1,0 +1,39 @@
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12{
+	float: left;
+}
+
+.title-group {
+    padding: 5px 0px 0px 0px !important;
+}
+.next-group {
+    padding: 0px 5px 5px 5px;
+    float: left;
+}
+.title-group > label {
+    font-weight: bold;
+}
+.form-group > label {
+    font-weight: bold;
+}
+div#first-group {
+    float: left;
+    width: 100%;
+}
+
+
+.radio-option input.group_option_text{
+    display: inline-block;
+    width: auto;
+    height: 100%;
+    margin: 5px 5px 5px 5px;
+    padding: 3px 3px 3px 3px;
+}
+/*
+
+.form-group {
+    float: left;
+    width: 100%;
+}*/

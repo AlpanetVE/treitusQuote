@@ -147,7 +147,7 @@ function send_smtp_email( $phpmailer )
     $phpmailer->Username = "admin@treitus.com";
 
     // Password to use for SMTP authentication
-    $phpmailer->Password = "leccionesdeamor2018";
+    $phpmailer->Password = MAIL_PASSWD;
 
     // The encryption system to use - ssl (deprecated) or tls
     $phpmailer->SMTPSecure = "ssl";

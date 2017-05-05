@@ -902,7 +902,7 @@ class treitusQuote {
 
 				if (!empty($id)) $query.=" and id = '$id'";
 
-				if (!empty($email)) $query.=" or email = '$email'";
+				if (!empty($email)) $query.=" and email = '$email'";
 
 				if (!empty($status)) $query.=" and status = '$status'";
 

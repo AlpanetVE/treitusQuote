@@ -66,11 +66,11 @@ function tqt_status_orders( $atts ) { // New function parameter $content is adde
 	$urlPay 			= home_url().'/pay-quote/?code=';
 	$urlSee 			= home_url().'/detail-of-quotization/?code=';
 	$treitusQuote 		= new treitusQuote();
-	$arrQuotePendiente	= $treitusQuote-> getQuoteList( null, null ,1,$id_user);
-	$arrQuotePorPagar	= $treitusQuote-> getQuoteList( null, null ,2,$id_user);
+	$arrQuotePendiente	= $treitusQuote-> getQuoteList( null, $user_email ,1,$id_user);
+	$arrQuotePorPagar	= $treitusQuote-> getQuoteList( null, $user_email ,2,$id_user);
 	//$arrQuoteProceso	= $treitusQuote-> getQuoteList( null, null ,3,$id_user);
-	$arrQuotePorPagarDos= $treitusQuote-> getQuoteList( null, null ,3,$id_user);
-	$arrQuoteFinalizado	= $treitusQuote-> getQuoteList( null, null ,4,$id_user);
+	$arrQuotePorPagarDos= $treitusQuote-> getQuoteList( null, $user_email ,3,$id_user);
+	$arrQuoteFinalizado	= $treitusQuote-> getQuoteList( null, $user_email ,4,$id_user);
 
 
 	if (!empty($arrQuotePendiente) || !empty($arrQuotePorPagar) || !empty($arrQuoteProceso) || !empty($arrQuotePorPagarDos) || !empty($arrQuoteFinalizado)) {
@@ -119,7 +119,7 @@ $treitusQuote 	= new treitusQuote();
 $direccion=$treitusQuote->getAddres($user->ID);
 $ciudad = !empty($direccion[0]['city']) ? $direccion[0]['city'] : ' ';
 $zipcode = !empty($direccion[0]['zipcode']) ? $direccion[0]['zipcode'] : ' ';
- 
+
 	if ($page=='middle') {
 		$class_col_cont	= ' col-sm-6 col-sm-offset-3';
 		$class_col_inner= ' col-sm-10 col-sm-offset-1';

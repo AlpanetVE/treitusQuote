@@ -298,6 +298,7 @@ class treitusQuote {
 	}
 
 public function updateUserQuote($email,$id_user){
+global $wpdb;
 	$sql   = "UPDATE `$this->table_quote` SET
 	id_user = '$id_user'
 	WHERE id_user = 0 and email = '$email'";

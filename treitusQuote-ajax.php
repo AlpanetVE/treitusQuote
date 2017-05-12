@@ -22,7 +22,7 @@ if ($_POST['action']=='getCheckManufacture') {
 	?>
 
 		<div id="cont-files" >
-			<div class="filesRequired">
+			<div>
 				<label><strong>Cargar archivo 3D</strong></label>
 				<label class='error' style='display: none;'>Este campo es requerido</label>
 				<div class="box">

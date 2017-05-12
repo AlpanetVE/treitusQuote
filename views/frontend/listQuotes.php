@@ -125,7 +125,7 @@
 		*/}
 		if (!empty($arrQuotePorPagarDos)) {
 			?>
-			<h3>Proyecto por Finalizar</h3>
+			<h3>Proyecto en proceso</h3>
 			<table class="table table-striped" border="0" align="center" cellpadding="0" cellspacing="0" >
 			<thead>
 				<tr>

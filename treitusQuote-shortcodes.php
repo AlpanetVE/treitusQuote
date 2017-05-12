@@ -119,7 +119,7 @@ $treitusQuote 	= new treitusQuote();
 $direccion=$treitusQuote->getAddres($user->ID);
 $ciudad = !empty($direccion[0]['city']) ? $direccion[0]['city'] : ' ';
 $zipcode = !empty($direccion[0]['zipcode']) ? $direccion[0]['zipcode'] : ' ';
- 
+
 	if ($page=='middle') {
 		$class_col_cont	= ' col-sm-6 col-sm-offset-3';
 		$class_col_inner= ' col-sm-10 col-sm-offset-1';

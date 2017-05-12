@@ -73,6 +73,13 @@ function plugin_admin_init() {
 
 }
 
+add_action('user_register','tqt_update_quotes');
+
+function tqt_update_quotes($user_id){
+	$quote = new treitusQuote();
+	$user_info = get_userdata($user_id);
+	$quote->updateUserQuote($user_info->user_email,$user_id);
+}
 
 /**
  * PAGE VIEWS

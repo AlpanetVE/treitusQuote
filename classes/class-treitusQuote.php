@@ -297,6 +297,14 @@ class treitusQuote {
 		return $pathFile;
 	}
 
+public function updateUserQuote($email,$id_user){
+	global $wpdb;
+	$sql   = "UPDATE `$this->table_quote` SET
+	id_user = '$id_user'
+	WHERE id_user = 0 and email = '$email'";
+	return $wpdb->query($sql);
+}
+
 	public function insertQuote($values,$files){
 	    global $wpdb;
 		//$sqlInsert=""

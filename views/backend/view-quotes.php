@@ -39,7 +39,7 @@ class treitusQuoteList extends WP_List_Table {
     }
 
     function load_dependencies(){
-    	require_once( TQT_ABSPATH . 'classes/class-treitusQuoteNew.php' );
+    	require_once( TQT_ABSPATH . 'classes/class-treitusQuote.php' );
 			require_once(TQT_ABSPATH . 'classes/class-emails.php' );
     }
 

@@ -1,7 +1,7 @@
 <?php
 require_once('../../../wp-load.php');
 require_once('define.php');
-require_once('classes/class-treitusQuoteNew.php');
+require_once('classes/class-treitusQuote.php');
 
 $GeneratorEvents 	= new treitusQuote();
 

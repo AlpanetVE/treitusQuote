@@ -38,7 +38,7 @@ Copyright 2012-2016 Alpanet
 require_once("define.php");
 require TQT_ABSPATH . 'config/config.php';
 
-require TQT_ABSPATH . 'classes/class-treitusQuoteNew.php';
+require TQT_ABSPATH . 'classes/class-treitusQuote.php';
 require TQT_ABSPATH . 'treitusQuote-shortcodes.php';
 
 /**BACK END**/

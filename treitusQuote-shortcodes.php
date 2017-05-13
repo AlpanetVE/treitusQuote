@@ -30,6 +30,7 @@ function scripts_front() {
 
 	if ( !is_user_logged_in() ) {
 	    add_filter('show_admin_bar', '__return_false');
+	    remove_action('wp_head', '_admin_bar_bump_cb');
 	}
 }
 

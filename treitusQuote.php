@@ -56,6 +56,8 @@ if (!is_admin()) {
 	//require TQT_ABSPATH . 'views/frontend/ge-events.php';
 }
 
+
+
 add_action( 'admin_post_nopriv', 'tqt_process_forms' ); //Procesar cuando no esta logueado
 add_action('admin_post','tqt_process_forms');//Procesar cuando esta logueado
 function tqt_process_forms(){

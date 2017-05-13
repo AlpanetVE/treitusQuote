@@ -27,6 +27,10 @@ function scripts_front() {
 	wp_enqueue_style('tqt_component');
 	wp_enqueue_style('tqt_datetime');
 	wp_enqueue_style('tqt_front_style');
+
+	if ( !is_user_logged_in() ) {
+	    add_filter('show_admin_bar', '__return_false');
+	}
 }
 
 function tqt_addres( $atts ) {
